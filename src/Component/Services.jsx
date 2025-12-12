@@ -103,7 +103,7 @@ export default function Services() {
     },
     {
       title: "Google Ads",
-      logo: "ads1.png",
+      logo: "ads.png",
       desc:
         "Let our experts take charge of your PPC campaigns. Achieve BIG with performance marketing strategies.",
       items: ["Google Ads", "PMax Campaigns", "Shopping Campaigns", "Planning & Strategies"],
