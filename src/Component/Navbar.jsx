@@ -27,7 +27,8 @@ const Navbar = () => {
           {/* Logo */}
           <div>
             <img
-              src="src/assets/trosoft.png"
+              // src="src/assets/trosoft.png"
+               src={`${import.meta.env.BASE_URL}logos/trosoftlogo.png`}
               alt="Trosoft Logo"
               className="h-16 w-20 object-contain"
             />

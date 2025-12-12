@@ -1,9 +1,5 @@
 
 import React from "react";
-import logo from "../assets/logo.png";
-import Trust from "./Trust.jsx";
-import Services from "./Services.jsx";
-
 export default function Header() {
   return (
     <div className="w-full">
@@ -31,10 +27,10 @@ export default function Header() {
           {/* Right Image */}
           <div className="flex justify-center">
             <img
-              src={logo}
+              src={`${import.meta.env.BASE_URL}logos/header.png`}
               alt="banner"
               className="w-[90%] md:w-full"
-            />
+            /> 
           </div>
         </div>
       </section>
