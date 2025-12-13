@@ -1,44 +1,24 @@
 @import "tailwindcss";
 
- /* Marquee Animation */
 
-@keyframes slideLeftRight {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.marquee {
-  animation: slideLeftRight 20s linear infinite;
-}
-
-@keyframes infiniteScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.marquee-container {
-  overflow: hidden;
-}
-
-.marquee-content {
-  display: flex;
-  width: max-content;
-  animation: infiniteScroll 22s linear infinite;
-}
-
-/* Default speed (Laptop / PC) */
-.marquee {
-  animation: marquee 30s linear infinite;
-}
-
-/* Mobile speed increase (fast) */
-@media (max-width: 768px) {
-  .marquee {
-    animation: marquee 10s linear infinite; /* mobile = 2x fast */
+@keyframes moveFullScreen {
+  0% {
+    transform: translateX(-100vw); /* screen ke bahar se */
+  }
+  100% {
+    transform: translateX(100vw); /* screen ke bahar tak */
   }
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.marquee-track {
+  animation: moveFullScreen 25s linear infinite; /* speed fast */
+  width: 100%;
+  will-change: transform;
+}
+
+/* 📱 Mobile – Faster speed */
+@media (max-width: 640px) {
+  .marquee-track {
+    animation: moveFullScreen 8s linear infinite;
+  }
 }

@@ -6,7 +6,7 @@
 /* Mobile speed increase (fast) */
 @media (max-width: 768px) {
   .marquee {
-    animation: marquee 10s linear infinite; /* mobile = 2x fast */
+    animation: marquee 25s linear infinite; /* mobile = 2x fast */
   }
 }
 

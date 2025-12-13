@@ -14,12 +14,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               {/* <img src="src/assets/image.png" className=" w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto" alt="Trosoft Logo" /> */}
+              <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-xl object-cover">
               <img
-                src={`${import.meta.env.BASE_URL}logos/trosoft1.png`}
+                src={`${import.meta.env.BASE_URL}logos/trosoft1.jpeg`}
                 alt="Trosoft Logo"
-                className="w-20 h-20 rounded-full border-4 border-white shadow-xl object-cover"
+                className="w-20 h-20 "
               />
-
+                 </div>
               <h2 className="text-2xl font-bold tracking-wide">Trosoft</h2>
             </div>
             <p className="text-white/90 text-sm leading-6">
